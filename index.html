@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <main>
+      <section id="content-input">
+        <div id="content-form">
+          <h1>Bookshelf App</h1>
+          <form id="form-input">
+            <label for="nama">Judul : </label> <br />
+            <input type="text" id="bookname" name="judul" maxlength="50" value="" required placeholder="Masukkan Judul Buku" /><br /><br />
+            <label for="penulis">Penulis : </label> <br />
+            <input type="text" id="bookwriter" name="penulis" maxlength="25" value="" required placeholder="Masukkan Penulis Buku" /><br /><br />
+            <label for="tahun">Tahun : </label> <br />
+            <input type="number" id="bookyear" name="tahun" maxlength="4" value="" required placeholder="Masukkan Tahun Buku Terbit" /><br /><br />
+            <label for="dibaca">Buku sudah dibaca:</label>
+            <input type="checkbox" id="bookCheked" /><br /><br />
+
+            <input type="submit" value="Tambahkan Buku ke Rak Baca" id="form-button" />
+          </form>
+        </div>
+      </section>
+      <section id="content-display">
+        <div id="content-search">
+          <form action="" id="form-search">
+            <input type="text" id="search-box" placeholder="Masukkan nama buku yang dicari" />
+          </form>
+        </div>
+        <div id="content-list">
+          <div id="content-read" class="display-book">
+            <h2>Belum Selesai Dibaca</h2>
+            <div class="book-list" id="readBook"></div>
+          </div>
+          <div id="content-readed" class="display-book">
+            <h2>Selesai Dibaca</h2>
+            <div class="book-list" id="finishBook"></div>
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
